@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Update NeedIt Records">45ab77b893c70210894e71218bba10a0</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"17e66175a7dd492ea4504176d466cfa9","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"17e66175a7dd492ea4504176d466cfa9"}],"goals":[{"name":"primary","trigger_id":"17e66175a7dd492ea4504176d466cfa9","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hi, I am Harshita. How may i help you!\", vaContext.getRequesterLang())"},"id":"46fd4b5ad4bb4ddeb667d224a4f709cb","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"5e05d11cdfaf43799abe9120ec8b7bf7","name":"End","expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"46fd4b5ad4bb4ddeb667d224a4f709cb","target_node_id":"5e05d11cdfaf43799abe9120ec8b7bf7","id":"09d2bf0206f740408c0c9a0849be3c89"}],"id":"primary"}],"script_variables":[{"type":"String","name":"LiveAgent_application","value":{"type":"String","mode":"string"},"list":false,"id":"a2a7df5dfc92411b8e8d319bf65233f9","formatType":"text","secure":false,"sensitive":false,"aiInput":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"610a333893c70210894e71218bba1009","name":"Update NeedIt Records","key_phrases":["Update NeedIt Records","NeedIt Request"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"c5e8777893c70210894e71218bba10a5"}],"triggerable_by_notification":false,"description":"Topic to Update NeedIt Records","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>610a333893c70210894e71218bba1009</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.65",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "46fd4b5ad4bb4ddeb667d224a4f709cb": {
+          "id": "46fd4b5ad4bb4ddeb667d224a4f709cb",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hi, I am Harshita. How may i help you!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "5e05d11cdfaf43799abe9120ec8b7bf7": {
+          "id": "5e05d11cdfaf43799abe9120ec8b7bf7",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "09d2bf0206f740408c0c9a0849be3c89",
+          "edgeType": "Edge",
+          "source": "46fd4b5ad4bb4ddeb667d224a4f709cb",
+          "target": "5e05d11cdfaf43799abe9120ec8b7bf7",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "a2a7df5dfc92411b8e8d319bf65233f9": {
+      "id": "a2a7df5dfc92411b8e8d319bf65233f9",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <name>Update NeedIt Records</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-25 09:50:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>85ab77b893c70210894e71218bba10a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_85ab77b893c70210894e71218bba10a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-25 09:50:56</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
